@@ -1,0 +1,33 @@
+login:
+
+  url: 'http://www.test.loonglink.net/user/login'
+  username:
+    type: xpath
+    name: '//*[@id="__layout"]/div/div[3]/div[3]/div[2]/div[2]/div/form/div[1]/div/div[1]/input'
+
+
+  password:
+    type: xpath
+    name: '//*[@id="__layout"]/div/div[3]/div[3]/div[2]/div[2]/div/form/div[2]/div/div[1]/input'
+
+  user_pas:
+    user_fail: '123'
+    user_suss: '17335352240'
+    pas_fail: '1111'
+    pas_suss: '11111111'
+
+
+  login_err:
+    type: xpath
+    name: "//*[@class='el-button ll-button submit-button el-button--primary']/span"
+    login_fail_text: '登录'
+
+  login_suss:
+    # 登录成功断言定位
+    type: xpath
+    name: "//*[@class='login-button logout']"
+    login_fail_text: '[退出]'  # 登录失败断言文本
+
+  sub:
+    type: xpath
+    name: "//*[@class='el-button ll-button submit-button el-button--primary']/span"

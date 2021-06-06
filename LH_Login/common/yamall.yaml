@@ -1,0 +1,19 @@
+user:
+  col: 账号
+  type: By.ID
+  ele: "//*[@type='text']"
+
+paswprd:
+  col: 密码
+  type: xpath
+  ele: "//*[@type='password']"
+
+user_t:
+  user: 'admin@admin.com'
+
+  pas_t:
+    pas: 'adminsss'
+
+sub:
+  type : xpath
+  subli : "//*[@type='submit']"

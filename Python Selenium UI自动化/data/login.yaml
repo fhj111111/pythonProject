@@ -1,0 +1,27 @@
+login:
+  url:
+    url: 'http://flash-admin.enilu.cn/#/login'
+  username:
+    type: 'name'
+    user: 'username'
+
+  password:
+    type: 'name'
+    pass: 'password'
+
+  subimt:
+    type: 'xpath'
+    subimt: '//*[@class="el-button el-button--primary"]'
+  text:
+    text: 'admin'
+    test_fail: 'admin1'
+
+  title_suss:
+    type: 'xpath'
+    ele: '//*[@id="dashboard"]/div[1]'
+    text: '欢迎光临:管理员'
+
+  title_fail:
+    type: 'xpath'
+    ele: '//*[@class="title-container"]/h3'
+    text: 'web-flash'
