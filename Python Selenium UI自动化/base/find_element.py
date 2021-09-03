@@ -21,7 +21,7 @@ class base:
         :param text:
         :return:
         """
-        return self.driver.title()
+        return self.driver.title
 
     def find_element(self, *loc):
         STYLE = "background: green; border: 2px solid red;"  # 高亮的样式
@@ -214,10 +214,15 @@ if __name__ == '__main__':
     print(time.thread_time())
     ls = base(driver)
     ls.url(url)
-    ls.find_send(password, text1)
-    ls.click(submit)
-    print(time.thread_time())
-    text = 'web-flash'
-    tes = ('xpath','//*[@class="title-container"]/h3')
-    aa = ls.assert_text(tes)
-    print(aa)
+    # ls.find_send(password, text1)
+    # ls.click(submit)
+    # print(time.thread_time())
+    # text = 'web-flash'
+    # tes = ('xpath','//*[@class="title-container"]/h3')
+    # aa = ls.assert_text(tes)
+    tt= ls.find_title()
+    if ls.find_title() == '欢迎光临 | web-flash后台管理':
+        print('断言成功')
+    else:
+        print('断言失败')
+    # print(aa)

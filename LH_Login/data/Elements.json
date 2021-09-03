@@ -1,5 +1,0 @@
-{"send_user":{"user_ele": ["By.ID","username"]},
-"send_paw":{"psw_ele":"By.ID,password_input"},
-"sub":{"sub_ele":"By.ID,tcloud_login_button"}}
-
-

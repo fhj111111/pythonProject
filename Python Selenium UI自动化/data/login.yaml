@@ -25,3 +25,20 @@ login:
     type: 'xpath'
     ele: '//*[@class="title-container"]/h3'
     text: 'web-flash'
+
+
+
+logout:
+  click:
+    type: 'xpath'
+    ele: "//*[@class='user-avatar']"
+
+  exit:
+    type: 'xpath'
+    ele: '//*[@style="display: block;"]'
+    ele2: '//*[contains(@id, "dropdown-menu-"]/li/span'
+    ele3:
+
+  text:
+    text_exit_suss: "欢迎光临 | web-flash后台管理"
+    text_exit_fail: "首页 | web-flash后台管理"

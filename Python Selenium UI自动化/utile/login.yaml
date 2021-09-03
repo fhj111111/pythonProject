@@ -1,3 +1,0 @@
-login:
-  url : 'http://in'
-  type : (By.NAME,'password')
